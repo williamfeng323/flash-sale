@@ -1,0 +1,32 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "ts_init",
+          "type": "shell",
+          "command": "make reset_mssql",
+          "group": "test",
+          "presentation": {
+              "reveal": "silent",
+              "echo": false,
+              "focus": false
+          }
+      },
+     {
+          "label": "ts_compile",
+          "type": "shell",
+          "command": "make compile",
+          "args": [
+              "ENV=qa",
+          ],
+          "group": "build",
+          "presentation": {
+              "reveal": "silent",
+              "echo": false,
+              "focus": false
+          }
+      }
+  ]
+}

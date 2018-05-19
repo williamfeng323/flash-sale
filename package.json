@@ -1,0 +1,39 @@
+{
+  "name": "flash-sale",
+  "version": "0.0.1",
+  "description": "Flash sale back-end build by KOA",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "make test",
+    "debug": "babel-node --debug=5858 server.js",
+    "linter": "make linter"
+  },
+  "pre-commit": [
+    "linter"
+  ],
+  "pre-push": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamfeng323/flash-sale.git"
+  },
+  "author": "Willie Feng",
+  "dependencies": {
+    "@types/joi": "^13.0.8",
+    "@types/koa": "^2.0.45",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/koa-joi-router": "^5.0.2",
+    "@types/koa-json-error": "^3.1.2",
+    "@types/koa-logger": "^3.1.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.1",
+    "koa-joi-router": "^5.1.0",
+    "koa-json-error": "^3.1.2",
+    "koa-logger": "^3.2.0",
+    "koa-qs": "^2.0.0",
+    "pm2": "^2.10.3"
+  }
+}

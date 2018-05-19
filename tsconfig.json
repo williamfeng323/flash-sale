@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "./build/",
+    "sourceMap": false,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules/**/*"
+  ]
+}
